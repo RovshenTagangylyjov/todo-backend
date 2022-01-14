@@ -2,12 +2,11 @@ import dj_database_url
 
 from .base import *
 
+ALLOWED_HOSTS = ["todo-django4.herokuapp.com"]
 
 DEBUG = False
 
 SECRET_KEY = os.getenv('SECRET_KEY')
-
-ALLOWED_HOSTS = ["todo-django.herokuapp.com"]
 
 # Security
 SESSION_COOKIE_SECURE = True
