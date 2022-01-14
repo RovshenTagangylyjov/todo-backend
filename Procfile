@@ -1,1 +1,2 @@
-web: gunicorn todo.wsgi --log-file -
+release: python3 manage.py migrate
+web: gunicorn todo.wsgi:application --log-file
