@@ -24,9 +24,9 @@ SECURE_HSTS_PRELOAD = True
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
 
-MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
+# MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_ALLOWED_ORIGINS = [
     "https://todo-vue3.herokuapp.com"
